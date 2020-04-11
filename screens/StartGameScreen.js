@@ -13,7 +13,8 @@ import Color from "../components/common/Color";
 import Card from "../components/Card";
 import Input from "../components/Input";
 import NumberContainer from "../components/NumberContainer";
-import BodyText from "../components/common/BodyText";
+import BodyText from "../components/BodyText";
+import RoundButton from "../components/RoundButton";
 
 const StartGameScreen = props => {
   
@@ -65,7 +66,13 @@ const StartGameScreen = props => {
       <Card style={styles.summaryContainer}>
         <Text style={{fontSize: 18}}>You selected</Text>
         <NumberContainer>{selectedNumber}</NumberContainer>
-        <Button title='START GAME' onPress={() => props.onStartGame(selectedNumber)} color={Color.mainBlue} />
+        <RoundButton 
+          onPress={() => props.onStartGame(selectedNumber)}
+          paddingVertical={12}
+          paddingHorizontal={30}
+        >
+          START GAME
+        </RoundButton>
       </Card>
     );
   };
