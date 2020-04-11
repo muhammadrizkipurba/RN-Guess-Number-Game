@@ -102,8 +102,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     marginTop: 20,
-    width: 300,
-    maxWidth: "80%",
+    width: "80%",
+    minWidth: 300,
   },
 });
 
